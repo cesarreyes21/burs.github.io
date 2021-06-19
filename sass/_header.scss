@@ -1,0 +1,48 @@
+ .menu{
+    float: right;
+    padding-right: 100px;
+}
+nav{
+    width: 25%;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+}
+.nav-item .nav-link{
+    color: #fff !important;
+}
+
+ul ul{
+    position: absolute;
+   display: none;
+}
+ul ul li {
+    display: block;
+    background-color: #cdcdcd;
+ }
+ ul li:hover ul {
+    display:block;
+ }
+ 
+.menu ul li a{
+    display: inline-block;
+text-decoration: none;
+font-family: "dubai"; 
+color: #000;
+}
+.menu ul li ul li a{
+    width: 190px;
+}
+.menu ul li ul li{
+    border-top: 1px solid #000;
+}
+a{text-decoration: none;}
+
+.menu ul li a:hover{
+    color:#999
+}
+header{
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
+}

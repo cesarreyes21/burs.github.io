@@ -1,0 +1,323 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "nosotros";
+@import url(../css/galeria.css);
+
+
+/*INICIO*/
+*{
+    box-sizing: border-box;
+}
+    .header{
+        position: absolute !important;
+    background-color: transparent !important;
+    }
+    .logo{
+        padding: 20px 0 0 20px;
+    }
+   
+    .portada{
+        background-image: url(../img/que-es-el-trading.jpg);
+        background-position: center;
+        background-size: cover;
+        width: $full-size;
+        height: 100vh;
+        text-align: center; 
+    }
+    .portada h3{
+        padding:20px
+    } 
+    
+   
+    
+    .btn {
+        position: relative;
+        display: inline-block;
+        border: 2px solid #003B6C;
+        padding: 13px 45px 12px;
+        text-decoration: none;
+        font-size: 13px;
+        color: $white;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+        border-radius: 0;
+        text-transform: uppercase;
+        background-color: #003B6C;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+    .btn:hover{
+        background-color: #ccc;
+        transform: scale(1.2);
+        transition: ease 0.4s;
+    }
+    /*NOSOTROS*/
+    .texto{
+        padding: 50px 20px;
+        text-align: justify;
+    }
+    .youtube{
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+    }
+    /*TABLAS*/
+    table{
+            display: inline-table;
+    }
+    .tabla{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    th{
+        font-family: 'Raleway', sans-serif;
+        height: 40px;
+    }
+    
+    
+    p{
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.5;
+    }
+    /*PIE DE PÁGINA*/
+    .footer{
+        width: $full-size;
+    }
+    .footer-alineado {
+        padding: 28px 0;
+        background-color: #141414;
+        margin: 0;
+        text-align: center;
+        height: 80px;
+    }
+    .redes ul li a span{
+        font-family: "oswald";
+        color:$dark;
+        padding-top: 15px;
+        margin:10px
+    }
+    .datos-empresa{
+        width: 800px;
+        float: right;
+        padding-left: 20px;
+    
+    }
+   
+    #fondo_inicio{
+        background-image: url(../img/fondo_inicio.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: $full-size;
+        height: 400px;
+    }
+    #fondo_inicio h3{
+        font-size: 50px;
+        color: $white;
+        padding-top: 150px;
+    }
+   
+    .overlay{
+        background-color: #0007;
+        width: $full-size;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        color: $white;
+    }
+    .icon-circle, .icon-circle-white {
+        display: inline-block;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        border-radius: 50%;
+        border: 2px solid #003B6C;
+    }
+    .icon-circle .fa, .icon-circle-white .fa {
+        font-size: $text * 4;
+        color: #003B6C;
+        vertical-align: middle;
+    }
+    
+    .form-control, textarea.form-control {
+        height: 54px;
+        color: #9F9F9F;
+        border-radius: 0;
+        padding-left: 22px;
+        text-transform: uppercase;
+        color: #141414;
+        background-color: transparent;
+        border: 2px solid #141414;
+        letter-spacing: 0.1em;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: all .15s;
+        -o-transition: all .15s;
+        transition: all .15s;
+    }
+    .form-control-white, textarea.form-control-white {
+        border-color: $white;
+        color: $white;
+    }
+    .btn-b-white {
+        border: 2px solid $white;
+        background-color: transparent;
+    }
+    .btn-b-white:hover, .btn-b-white:focus, .btn-hvr-white:hover, .btn-hvr-white:focus {
+        color: #141414;
+        background-color: $white;
+        border-color: $white;
+    }
+    
+    .icon-circle-2 {
+        display: inline-block;
+        text-align: center;
+        width: 80px; 
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50%;
+        border: 2px solid $white;
+    }
+    .media-left, .media-right, .media-body {
+        display: table-cell;
+        vertical-align: top;
+    }
+    .media-left, .media>.pull-left {
+        padding-right: 10px;
+    }
+    .media-right, .media>.pull-right {
+        padding-left: 10px;
+    }
+    .tarjeta {
+        background-color: $dark;
+        color: $white;
+        align-items: center;
+        position: relative;
+        padding: 40px 50px;
+    margin-bottom: 170px;
+    }
+    
+    .tarjeta__img {
+        width: $full-size;
+        margin-right: 30px;
+    }
+    
+    .tarjeta__titulo {
+        font-size:1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .tarjeta__parrafo {
+        line-height: 28px;
+        font-size:1rem;
+    }
+    .beneficios__contenido--descr{
+        font-size: $text + 3;
+    }
+    .beneficios__contenido{
+        margin-top:80px;
+        
+    }
+    .beneficios{
+        padding-top: 100px; 
+    }
+    .beneficios__contenido--icon{
+        position: relative;
+        text-align: center;
+        color: #003B6C !important;
+        font-size: 25px;
+    }
+    .precios__content{
+        width: $full-size;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        padding: 100px;
+    }
+    
+    .precios__box {
+        border-color: #003B6C;
+        position: relative;
+    border: 2px solid #f0f5f9;
+    }
+    .precios__header{
+        background-color: #003B6C;
+        color: $white;
+        padding: 35px 20px;
+    line-height: 1;
+    }
+    .precios__header-title{
+        font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    }
+    .precios__header-amount {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .precios__datos{
+        font-size: 12px;
+    letter-spacing: 0.1em;
+    padding: 40px 20px;
+    }
+    .precios__datos ul li {
+        position: relative;
+        margin: 0 0 25px 0;
+    }
+    .precios__datos ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .beneficios__title--texto{
+        font-family: 'oswald';
+    }
+    .boton-blog{
+        position: relative;
+    display: inline-block;
+    margin: 30px auto 0;
+    min-width: 240px;
+    padding: 14px 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+        border: 2px solid;
+        border-color: #d72828;
+    }
+    .header__blog{
+        background-color: $dark;
+    }
+    .blog{
+        padding-top: 150px;
+    }
+    @mixin titulos {
+        font-size: $text * 5;
+        font-family: "oswald";
+        margin:0px ;}
+        
+    h1 {@include titulos}
+
+    @mixin subtitulos {
+        font-family: "oswald";
+        margin-top:0px ;
+        text-align: center;
+    }
+        
+    h3,h2,h4 {@include subtitulos}
+    
