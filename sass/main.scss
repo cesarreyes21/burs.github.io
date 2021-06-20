@@ -237,9 +237,26 @@
         display: flex;
         flex-flow: wrap;
         justify-content: center;
-        padding: 100px;
+        padding: 30px;
     }
-    
+    .fotos{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 0px 400px;
+        justify-content: center;
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+       
+    }
+    .fotos a img{
+        width: 250px;
+    }
+    .fotos h1{
+        width: 100%;
+        text-align: center;
+    }
     .precios__box {
         border-color: #003B6C;
         position: relative;
@@ -321,3 +338,21 @@
         
     h3,h2,h4 {@include subtitulos}
     
+    
+    @media (max-width: 768px) {
+        .fotos{
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            justify-content: center;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        .footer-alineado {
+            padding: 0;
+        }
+        .copy {
+            width: 100%;
+        }
+    }

@@ -1,62 +1,11 @@
 @charset "UTF-8";
 @import url(../css/galeria.css);
-.menu {
-  float: right;
-  padding-right: 100px;
+.navbar {
+  padding: 0;
 }
 
-nav {
-  width: 25%;
-  position: absolute !important;
-  top: 0;
-  right: 0;
-}
-
-.nav-item .nav-link {
-  color: #fff !important;
-}
-
-ul ul {
-  position: absolute;
-  display: none;
-}
-
-ul ul li {
-  display: block;
-  background-color: #cdcdcd;
-}
-
-ul li:hover ul {
-  display: block;
-}
-
-.menu ul li a {
-  display: inline-block;
-  text-decoration: none;
-  font-family: "dubai";
-  color: #000;
-}
-
-.menu ul li ul li a {
-  width: 190px;
-}
-
-.menu ul li ul li {
-  border-top: 1px solid #000;
-}
-
-a {
-  text-decoration: none;
-}
-
-.menu ul li a:hover {
-  color: #999;
-}
-
-header {
-  position: absolute;
-  width: 100%;
-  border-bottom: 1px solid #cdcdcd;
+.bg-dark {
+  background-color: #000 !important;
 }
 
 /*PIE DE PÃGINA*/
@@ -456,7 +405,27 @@ p {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  padding: 100px;
+  padding: 30px;
+}
+
+.fotos {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 0px 400px;
+  justify-content: center;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+}
+
+.fotos a img {
+  width: 250px;
+}
+
+.fotos h1 {
+  width: 100%;
+  text-align: center;
 }
 
 .precios__box {
@@ -543,4 +512,22 @@ h3, h2, h4 {
   font-family: "oswald";
   margin-top: 0px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .fotos {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .footer-alineado {
+    padding: 0;
+  }
+  .copy {
+    width: 100%;
+  }
 }
