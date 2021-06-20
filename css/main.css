@@ -260,6 +260,9 @@ p {
   color: #003B6C;
   vertical-align: middle; }
 
+.form-group {
+  margin-bottom: 40px; }
+
 .form-control, textarea.form-control {
   height: 54px;
   color: #9F9F9F;
@@ -280,12 +283,20 @@ p {
   border-color: #fff;
   color: #fff; }
 
+textarea.form-control {
+  height: 188px;
+  padding-top: 14px;
+  resize: none; }
+
+input::placeholder {
+  color: blue; }
+
 .btn-b-white {
   border: 2px solid #fff;
   background-color: transparent; }
 
 .btn-b-white:hover, .btn-b-white:focus, .btn-hvr-white:hover, .btn-hvr-white:focus {
-  color: #141414;
+  color: #000;
   background-color: #fff;
   border-color: #fff; }
 
@@ -307,6 +318,9 @@ p {
 
 .media-right, .media > .pull-right {
   padding-left: 10px; }
+
+.form-control-white::-webkit-input-placeholder {
+  color: #fff; }
 
 .tarjeta {
   background-color: #000;
@@ -378,14 +392,14 @@ p {
   padding: 35px 20px;
   line-height: 1; }
 
-.precios__header-title {
+.precios__header--title {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 8px; }
 
-.precios__header-amount {
+.precios__header--amount {
   font-size: 50px;
   font-weight: 600; }
 
@@ -431,17 +445,27 @@ p {
   background-color: #000; }
 
 .blog {
-  padding-top: 150px; }
+  padding-top: 100px; }
 
 h1 {
   font-size: 50px;
   font-family: "oswald";
   margin: 0px; }
 
-h3, h2, h4 {
-  font-family: "oswald";
-  margin-top: 0px;
-  text-align: center; }
+h3, h2 {
+  position: relative;
+  font-size: 28px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+h4, .h4 {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase; }
 
 @media (max-width: 768px) {
   .fotos {
@@ -455,4 +479,6 @@ h3, h2, h4 {
   .footer-alineado {
     padding: 0; }
   .copy {
-    width: 100%; } }
+    width: 100%; }
+  .blog {
+    padding-top: 1px; } }
