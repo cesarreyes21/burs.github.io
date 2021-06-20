@@ -30,8 +30,34 @@
       "https://www.youtube.com/channel/UCv6vCKrzWKaIMi5h2W5wTuw"
    ]
   }</script>
-  
-  <link rel="shortcut icon" href="favicon.png">
+  <!-- Messenger plugin de chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your plugin de chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "102291178678244");
+  chatbox.setAttribute("attribution", "biz_inbox");
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v10.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  <link rel="shortcut icon" href="img/favicon.png">
 <!--SEO-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -43,10 +69,10 @@
 
 </head>
 <body>
-     <!--ENCABEZADO-->
+     <!--ENCABEZADO
     <header>
-        <img class="logo" width="150"  src="./img/logo.png" alt="logo">
-      <!--MENU-->
+        <img class="logo" width="150"  src="./img/logo.png" alt="logo">-->
+      <!--MENU
     <nav class="navbar navbar-expand-lg navbar-light text-white">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -81,6 +107,46 @@
       </div>
     </nav>
     </header>
+
+-->
+
+     <!-- Loader -->
+
+   <!--MENU-->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#">
+        <img class="logo" width="150"  src="./img/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse justify-content-end navbar-collapse" id="navbarsExample07XL">
+        <ul class="navbar-nav text-center mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="nosotros.html">NOSOTROS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-bs-toggle="dropdown" aria-expanded="false">PROGRAMAS</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown07XL">
+              <li><a class="dropdown-item" href="programas.html">PROGRAMA VIRTUAL</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">BLOG</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <!--CONTENIDO DE LA PAGINA-->
     <section class="portada">
       <div class="overlay">
