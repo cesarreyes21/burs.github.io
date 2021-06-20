@@ -143,7 +143,11 @@
         color: #003B6C;
         vertical-align: middle;
     }
-    
+
+    //FORMULARIOS//
+    .form-group {
+        margin-bottom: 40px;
+    }
     .form-control, textarea.form-control {
         height: 54px;
         color: #9F9F9F;
@@ -164,12 +168,19 @@
         border-color: $white;
         color: $white;
     }
+    textarea.form-control {
+        height: 188px;
+        padding-top: 14px;
+        resize: none;
+    }
+    input::placeholder { color: blue; }
+
     .btn-b-white {
         border: 2px solid $white;
         background-color: transparent;
     }
     .btn-b-white:hover, .btn-b-white:focus, .btn-hvr-white:hover, .btn-hvr-white:focus {
-        color: #141414;
+        color: $dark;
         background-color: $white;
         border-color: $white;
     }
@@ -193,6 +204,10 @@
     .media-right, .media>.pull-right {
         padding-left: 10px;
     }
+    .form-control-white::-webkit-input-placeholder {
+        color: #fff;
+      }
+    //FIN DEL FORM//
     .tarjeta {
         background-color: $dark;
         color: $white;
@@ -268,14 +283,14 @@
         padding: 35px 20px;
     line-height: 1;
     }
-    .precios__header-title{
+    .precios__header--title{
         font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 8px;
     }
-    .precios__header-amount {
+    .precios__header--amount {
         font-size: 50px;
         font-weight: 600;
     }
@@ -321,7 +336,7 @@
         background-color: $dark;
     }
     .blog{
-        padding-top: 150px;
+        padding-top: 100px;
     }
     @mixin titulos {
         font-size: $text * 5;
@@ -331,13 +346,23 @@
     h1 {@include titulos}
 
     @mixin subtitulos {
-        font-family: "oswald";
-        margin-top:0px ;
-        text-align: center;
+        position: relative;
+    font-size: 28px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
     }
         
-    h3,h2,h4 {@include subtitulos}
+    h3,h2 {@include subtitulos}
     
+    h4, .h4 {
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
     
     @media (max-width: 768px) {
         .fotos{
@@ -354,5 +379,8 @@
         }
         .copy {
             width: 100%;
+        }
+        .blog {
+            padding-top: 1px;
         }
     }
